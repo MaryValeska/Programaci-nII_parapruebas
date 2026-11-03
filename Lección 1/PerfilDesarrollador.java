@@ -8,5 +8,6 @@ public class PerfilDesarrollador {
         } else {
             System.out.println("Error: ingrese su nombre y el lenguaje de desarrollador que utiliza.");
         }
+        //escribir: java PerfilDesarrollador Mary Python
     }
 }
