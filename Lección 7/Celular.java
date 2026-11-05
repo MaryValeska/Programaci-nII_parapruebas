@@ -1,3 +1,12 @@
+/*
+Desafío: Modelado de Dispositivos Electrónicos
+Diseñá una clase Java llamada Celular.java aplicando Abstracción y Encapsulamiento:
+
+Atributos privados: marca, modelo, porcentajeBateria (entero de 0 a 100).
+Método usarApp(int minutos) que consuma 1% de batería por cada 5 minutos de uso.
+Método cargarBateria(int cantidad) que aumente el porcentaje sin superar el 100%.
+*/
+
 public class Celular {
     private String marca;
     private String modelo;
