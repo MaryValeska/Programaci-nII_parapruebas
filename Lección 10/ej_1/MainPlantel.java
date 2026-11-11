@@ -8,6 +8,14 @@ public static void main(String[] args) {
     personas[4] = new Persona("Luis", 28);
     Persona.mostrarEstadisticas(personas);
 
+    int edadMinima = 30;
+        Persona[] filtradas = FiltrarArreglo.filtrarPorEdad(personas, edadMinima);
+
+        System.out.println("\nPersonas con edad mayor o igual a " + edadMinima + ":");
+        for (Persona persona : filtradas) {
+            System.out.println(persona.getNombre() + " - Edad: " + persona.getEdad());
+        }
+
     System.out.println("\n--- Prueba con nombre vacío ---");
     Persona[] personasConNombreVacio = new Persona[1];
     personasConNombreVacio[0] = new Persona("", 25);
@@ -20,4 +28,4 @@ public static void main(String[] args) {
     personasConEdadNegativa[0] = new Persona("Carlos", -5);
     Persona.mostrarEstadisticas(personasConEdadNegativa);
 
-}   
+}
